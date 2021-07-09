@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài tập 1 - Lesson 30</title>
+	<style type="text/css">
+		*{margin: 0px; padding: 0px; box-sizing: border-box}
+		#all {
+			display: grid;
+			grid-template-columns: 4fr 2fr 2fr 2fr 2fr 4fr;
+			grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1.5fr 0.7fr;
+			grid-gap: 0px;
+		}
+		header {
+			grid-column: 1 / 7;
+			height: 0.5fr;
+			background: red;
+		}
+		[class*="item"] {min-height: 50px;}
+		.item1 {
+			grid-column: 2/ span 4;
+			grid-row: 2 / span 2;
+			background: blue;
+		}
+		.item2 {
+			background: green;
+			grid-column: 5;
+			grid-row: 2;
+		}
+		.item3 {
+			background: yellow;
+			grid-column: 5;
+			grid-row: 3;
+		}
+		.item4 {
+			background: green;
+			height: 1.5fr;
+			grid-column: 2 / span 2;
+			grid-row: 4;
+		}
+		.item5 {
+			background: red;
+			grid-column: 4;
+			grid-row: 4 / span 2;
+		}
+		.item6 {
+			background: orange;
+			grid-column: 5;
+			grid-row: 4;			
+		}
+		.item7 {
+			background: green;
+			grid-column: 5;
+			grid-row: 5;
+		}
+		.item8 {
+			background: pink;
+			grid-column: 2;
+			grid-row: 5 / span 2;
+		}
+		.item9 {
+			background: orange;
+			grid-column: 3;
+			grid-row: 5 / span 2;
+		}
+		.item10 {
+			background: pink;
+			grid-column: 4 / span 2;
+			grid-row: 6;
+		}
+		footer {
+			background: red;
+			grid-column: 2 / span 4;
+			grid-row: 7;	
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<header></header>
+		<div class="item1">slide</div>
+		<div class="item2">Green1</div>
+		<div class="item3">Yellow 1</div>
+		<div class="item4">Green2</div>
+		<div class="item5">Red</div>
+		<div class="item6">Ogrange2</div>
+		<div class="item7">Green3</div>
+		<div class="item8">Pink1</div>
+		<div class="item9">Ogrange1</div>
+		<div class="item10">Pink 2</div>
+		<footer></footer>
+	</div>
+</body>
+</html>
